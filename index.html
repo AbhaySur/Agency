@@ -1,113 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Global Agency</title>
+  <title>Agency Website</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .service-cards .card img {
-      width: 250px;
-      height: 200px;
-    }
-  </style>
 </head>
-
 <body>
   <!-- Header -->
   <header class="header">
-    <img src="images/logo.png" alt="Global Agency Logo" class="logo" />
-    <nav class="navbar">
-  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-  <ul id="nav-links" class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="universities.html">Universities</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="faq.html">FAQ</a></li>
-  </ul>
-</nav>
-
+    <img src="images/logo.png" alt="Logo" class="logo" />
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <img src="images/hero.jpg" alt="Hero Image" class="hero-img" />
+  <!-- Sidebar Menu -->
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="universities.html">Universities</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <section class="hero">
+    <img src="images/hero.jpg" alt="Hero Image" class="hero-img">
     <div class="hero-text">
-      <h1>Welcome to Global Agency</h1>
-      <p>Your trusted partner in abroad education and services.</p>
+      <h1>Welcome to Our Agency</h1>
+      <p>Your dream destination awaits.</p>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2>About Us</h2>
-    <p>We help students and professionals achieve their dreams by guiding them through the process of studying or working abroad. With experienced consultants and global partnerships, we ensure the best outcomes for our clients.</p>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="section services">
-    <h2>Our Services</h2>
-    <div class="service-cards">
-      <div class="card">
-        <img src="images/icon1.png" alt="Counseling Icon" />
-        <h3>Free Counseling</h3>
-      </div>
-      <div class="card">
-        <img src="images/icon2.png" alt="Visa Icon" />
-        <h3>Visa Assistance</h3>
-      </div>
-      <div class="card">
-        <img src="images/icon3.png" alt="Support Icon" />
-        <h3>24x7 Support</h3>
-      </div>
-    </div>
-  </section>
-
-  <!-- Countries Section -->
-  <section id="countries" class="section countries">
-    <h2>The Countrie Serve</h2>
-    <img src="images/country.jpg" alt="Countries Map" class="country-img" />
-  </section>
-
-  <!-- Gallery Section -->
-  <section id="gallery" class="section gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="images/gallery1.jpg" alt="Gallery 1" />
-      <img src="images/gallery2.jpg" alt="Gallery 2" />
-      <img src="images/gallery3.jpg" alt="Gallery 3" />
-      <img src="images/gallery4.jpg" alt="Gallery 4" />
-      <img src="images/gallery5.jpg" alt="Gallery 5" />
-      <img src="images/gallery6.jpg" alt="Gallery 6" />
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section contact">
-    <h2>Contact Us</h2>
-    <p>Phone: <a href="tel:7676925515">7676925515</a></p>
-    <p>Email: <a href="mailto:globalagencyservice@gmail.com">globalagencyservice@gmail.com</a></p>
-    <p>Landline: 08022454519</p>
-    <a href="https://forms.gle/EuiiAZ8cYm1jLtnBA" target="_blank" class="form-link">Fill our contact form</a>
-  </section>
-
-  <!-- Footer -->
   <footer class="footer">
     <p>&copy; 2025 Global Agency. All rights reserved.</p>
   </footer>
-<script>
-  const menuToggle = document.getElementById("menu-toggle");
-  const navLinks = document.getElementById("nav-links");
 
-  menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
-  });
-</script>
+  <!-- Script -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
 
+    menuToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('open');
+      menuToggle.classList.toggle('open');
+    });
+  </script>
 </body>
-
 </html>
