@@ -1,4 +1,4 @@
-/* Global Reset and Defaults */
+/* General Styles */
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -57,10 +57,16 @@ body {
   border-radius: 10px;
 }
 
-/* Section Spacing */
+/* Section */
 .section {
   padding: 60px 20px;
   text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: #004aad;
+  margin-bottom: 20px;
 }
 
 /* Service Cards */
@@ -74,7 +80,7 @@ body {
 
 .card {
   background: white;
-  border-radius: 10px;
+  border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
   width: 260px;
@@ -125,8 +131,9 @@ body {
   transform: scale(1.05);
 }
 
-/* Contact Section */
-.contact p, .form-link {
+/* Contact & Forms */
+.contact p,
+.form-link {
   font-size: 18px;
   margin: 10px 0;
 }
